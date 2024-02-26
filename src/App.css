@@ -1,0 +1,53 @@
+nav {
+  height: 5vh;
+  width: 100vh;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  padding: 1rem;
+  gap: 1rem;
+  border-bottom: 1px black solid;
+}
+
+nav > a {
+  color: black;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  list-style: none;
+}
+
+li > a {
+  color: black;
+}
+
+.digi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 95vh;
+}
+
+.home {
+  height: 95vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bolder;
+}
