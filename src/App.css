@@ -26,14 +26,15 @@ nav > a {
 
 ul {
   display: flex;
-  flex-direction: column;
-  align-items: wrap;
+  flex-wrap: wrap;
 }
 
 li {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 20rem;
 
   list-style: none;
 }
