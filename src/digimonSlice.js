@@ -3,7 +3,7 @@ import api from "./api";
 const digimonApi = api.injectEndpoints({
   endpoints: (builder) => ({
     getDigimon: builder.query({
-      query: () => "/digimon",
+      query: () => ({ url: "/digimon", params: { pageSize: 50 } }),
       transformResponse: (response) => response.content,
       providesTags: ["Digimon"],
     }),
@@ -14,7 +14,4 @@ const digimonApi = api.injectEndpoints({
   }),
 });
 
-export const {
-  useGetDigimonQuery,
-  useGetDigimonByIdQuery,
-} = digimonApi;
+export const { useGetDigimonQuery, useGetDigimonByIdQuery } = digimonApi;

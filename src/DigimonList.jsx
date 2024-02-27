@@ -13,9 +13,13 @@ export default function DigimonList() {
           digimon.map((digi) => (
             <li key={digi.id}>
               <Link to={`/digimon/${digi.id}`}>
-                <h2>{digi.name} #{digi.id}</h2>
+                <h2>
+                  {digi.name} #{digi.id}
+                </h2>
               </Link>
-              <img src={digi.image} alt="digimon image" />
+              <Link to={`/digimon/${digi.id}`}>
+                <img src={digi.image} alt="digimon image" />
+              </Link>
             </li>
           ))
         )}
